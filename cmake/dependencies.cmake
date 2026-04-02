@@ -12,6 +12,9 @@ FetchContent_Declare(glfw
 )
 FetchContent_MakeAvailable(glfw)
 
+# GLAD2 v2.0.4 uses cmake_minimum_required(VERSION 3.2); allow it under CMake 4.x
+set(CMAKE_POLICY_VERSION_MINIMUM 3.5 CACHE STRING "" FORCE)
+
 # ── GLAD2 v2.0.4 (OpenGL 3.3 Core loader) ───────────────────────────────────
 # GLAD2 has no root CMakeLists.txt; glad_add_library is defined in cmake/CMakeLists.txt
 FetchContent_Declare(glad

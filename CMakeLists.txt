@@ -1,6 +1,5 @@
 cmake_minimum_required(VERSION 3.20)
-# GLAD2 v2.0.4 uses cmake_minimum_required(VERSION 3.2); allow it under CMake 4.x
-set(CMAKE_POLICY_VERSION_MINIMUM 3.5 CACHE STRING "" FORCE)
+
 project(cpp-opengl-renderer LANGUAGES CXX C)
 
 set(CMAKE_CXX_STANDARD 20)
